@@ -1,0 +1,6 @@
+{
+  "name": "man-buys-jewellery-website",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
+}
