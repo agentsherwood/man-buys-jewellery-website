@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './Footer.css'
 
 export default function Footer() {
@@ -5,44 +6,77 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>Man Buys Jewellery</h3>
-            <p>Beautiful jewelry, perfectly matched to your taste.</p>
-          </div>
-          <div className="footer-section">
-            <h4>App Links</h4>
-            <ul>
-              <li>
-                <a href="https://man-buys-jewellery-eight.vercel.app">Web App</a>
-              </li>
-              <li>
-                <a href="https://man-buys-jewellery-eight.vercel.app">Download iOS</a>
-              </li>
-              <li>
-                <a href="https://man-buys-jewellery-eight.vercel.app">Download Android</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Information</h4>
-            <ul>
-              <li>
-                <a href="/features">Features</a>
-              </li>
-              <li>
-                <a href="/testimonials">Testimonials</a>
-              </li>
-              <li>
-                <a href="/">About</a>
-              </li>
-            </ul>
+      <div className="footer-content">
+        <div className="footer-section">
+          <h4>Product</h4>
+          <ul>
+            <li>
+              <a href="https://man-buys-jewellery-eight.vercel.app" target="_blank" rel="noopener noreferrer">
+                Launch App
+              </a>
+            </li>
+            <li>
+              <Link href="/how-it-works">How It Works</Link>
+            </li>
+            <li>
+              <a href="https://man-buys-jewellery-eight.vercel.app/pricing" target="_blank" rel="noopener noreferrer">
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <a href="https://blog.manbuysjewellery.com" target="_blank" rel="noopener noreferrer">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li>
+              <a href="/privacy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/terms">Terms of Service</a>
+            </li>
+            <li>
+              <a href="/cookies">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h4>Connect</h4>
+          <div className="social-links">
+            <a href="https://twitter.com/MBJewellery" target="_blank" rel="noopener noreferrer" title="Twitter">
+              𝕏
+            </a>
+            <a href="https://instagram.com/MBJewellery" target="_blank" rel="noopener noreferrer" title="Instagram">
+              📷
+            </a>
+            <a href="https://tiktok.com/@MBJewellery" target="_blank" rel="noopener noreferrer" title="TikTok">
+              🎵
+            </a>
           </div>
         </div>
-        <div className="footer-bottom">
-          <p>&copy; {currentYear} Man Buys Jewellery. All rights reserved.</p>
-        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>&copy; {currentYear} Man Buys Jewellery. All rights reserved.</p>
+        <p>Your taste. Shared.</p>
       </div>
     </footer>
   )

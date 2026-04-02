@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1F3557"/>
+      <stop offset="100%" stop-color="#324f7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="180" fill="#D4A574" opacity="0.12"/>
+  <circle cx="170" cy="560" r="180" fill="#F5E6E0" opacity="0.2"/>
+  <rect x="80" y="92" width="92" height="92" rx="24" fill="#F9F7F5"/>
+  <path d="M126 112c16 0 28 12 28 26 0 24-28 41-28 41s-28-17-28-41c0-14 12-26 28-26Z" fill="#D4A574"/>
+  <path d="m126 143 18 15-10 25h-16l-10-25Z" fill="#1F3557"/>
+  <text x="80" y="276" fill="#F9F7F5" font-family="Arial, sans-serif" font-size="66" font-weight="700">Finally, Jewelry Gifts</text>
+  <text x="80" y="350" fill="#F9F7F5" font-family="Arial, sans-serif" font-size="66" font-weight="700">She'll Love</text>
+  <text x="80" y="440" fill="#F5E6E0" font-family="Arial, sans-serif" font-size="32">Swipe your style. Share your taste. Buy with confidence.</text>
+</svg>
