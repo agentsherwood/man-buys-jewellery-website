@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://man-buys-jewellery-eight.vercel.app/sitemap.xml
+Sitemap: https://man-buys-jewellery.vercel.app/sitemap.xml

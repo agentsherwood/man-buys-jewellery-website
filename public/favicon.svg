@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Man Buys Jewellery icon">
-  <rect width="64" height="64" rx="18" fill="#1F3557"/>
-  <path d="M32 12c7.6 0 13.5 5.8 13.5 12.8C45.5 36.4 32 45 32 45S18.5 36.4 18.5 24.8C18.5 17.8 24.4 12 32 12Z" fill="#D4A574"/>
-  <path d="m32 28 9 7.5-5 12.5H28l-5-12.5Z" fill="#F9F7F5"/>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="64" cy="64" r="60" fill="#F5F1E8"/>
+  <path d="M36 50C36 34.536 48.536 22 64 22C79.464 22 92 34.536 92 50C92 65.464 79.464 78 64 78C48.536 78 36 65.464 36 50Z" stroke="#2C5F5F" stroke-width="10"/>
+  <path d="M64 74V102" stroke="#D4A373" stroke-width="10" stroke-linecap="round"/>
+  <path d="M46 100L64 114L82 100" stroke="#E07A5F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

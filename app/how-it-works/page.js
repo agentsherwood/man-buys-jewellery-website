@@ -1,123 +1,134 @@
+import Button from '../../components/Button'
+import Card from '../../components/Card'
+
 export const metadata = {
-  title: 'How It Works | Man Buys Jewellery',
+  title: 'How It Works',
   description:
-    'Learn how Man Buys Jewellery works: swipe through jewelry, build your taste profile, and share it for the perfect gift.',
+    'Learn how women build a taste profile and how men use it to buy jewelry gifts with confidence.',
+  openGraph: {
+    title: 'How It Works | Man Buys Jewellery',
+    description:
+      'Swipe through jewelry, share a taste profile, and buy gifts with clarity.',
+    url: 'https://man-buys-jewellery.vercel.app/how-it-works',
+    images: ['/og-image.svg'],
+  },
 }
 
-export default function HowItWorks() {
+const appUrl = 'https://man-buys-jewellery-eight.vercel.app'
+
+const womenSteps = [
+  {
+    title: 'Swipe through real pieces',
+    copy:
+      'Open the app. Swipe through hundreds of real jewelry pieces. Heart what she loves, pass on the rest. The more she swipes, the better we understand her taste—metals, stones, styles, everything.',
+  },
+  {
+    title: 'Build taste automatically',
+    copy:
+      "She'll spend 10 minutes swiping through hundreds of real pieces from the UK's best jewelers. Left for not-quite-right, right for yes. As she swipes, the app learns her taste—metals, stones, styles, price range, all of it.",
+  },
+  {
+    title: 'Share what you love',
+    copy:
+      'Done swiping? Share your taste profile with your partner via a simple link. He can see exactly what she loves—no descriptions needed, just crystal-clear visuals.',
+  },
+]
+
+const menSteps = [
+  {
+    title: 'Receive her profile',
+    copy:
+      "Then you get access to her profile. You see what she's loved, filtered by budget and style.",
+  },
+  {
+    title: 'Browse the right picks',
+    copy:
+      'Use her profile as a guide. Filter by budget. See pieces that match her taste.',
+  },
+  {
+    title: 'Buy with confidence',
+    copy:
+      "Buy online with our affiliate links, or show the profile to a jeweler in-store. Either way, you're buying something she'll actually wear.",
+  },
+]
+
+export default function HowItWorksPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="hero hero-small">
-        <div className="hero-content">
-          <h1>How It Works</h1>
-          <p>Whether you're discovering your taste or buying the perfect gift, it's simple.</p>
+    <div className="page-shell">
+      <section className="page-hero">
+        <div className="site-container narrow-stack center">
+          <p className="eyebrow">How it works</p>
+          <h1>Three simple steps for both sides of the gift</h1>
+          <p>
+            Women build a taste profile. Men use it to shop clearly. The whole process is faster,
+            easier, and more personal.
+          </p>
         </div>
       </section>
 
-      {/* For Her Section */}
-      <section className="section">
-        <div className="section-content">
-          <h2>For Women: Discover Your Taste</h2>
-          <div className="flow-steps">
-            <div className="flow-step">
-              <div className="flow-icon">👆</div>
-              <h3>Step 1: Swipe</h3>
-              <p>
-                Browse beautiful, curated jewelry pieces. Swipe right on pieces that speak to you. Swipe left on pieces that don't.
-                It's fun, it's fast, it's addictive.
-              </p>
-            </div>
-            <div className="flow-arrow">→</div>
-            <div className="flow-step">
-              <div className="flow-icon">✨</div>
-              <h3>Step 2: Build Profile</h3>
-              <p>
-                As you swipe, we learn your taste. What metals do you prefer? Minimalist or statement? Classic or trendy?
-                Your profile becomes a crystal-clear picture of your style.
-              </p>
-            </div>
-            <div className="flow-arrow">→</div>
-            <div className="flow-step">
-              <div className="flow-icon">🔗</div>
-              <h3>Step 3: Share</h3>
-              <p>
-                Copy your profile link. Send it to your partner, friends, family. They click. They see exactly what you love.
-                Gift-giving just got easy.
-              </p>
-            </div>
+      <section className="section-block">
+        <div className="site-container">
+          <div className="section-heading">
+            <p className="eyebrow">For Women</p>
+            <h2>Swipe, build taste, share</h2>
+          </div>
+          <div className="steps-grid">
+            {womenSteps.map((step, index) => (
+              <Card key={step.title} title={step.title}>
+                <p className="step-number">{`0${index + 1}`}</p>
+                <p>{step.copy}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* For Him Section */}
-      <section className="section alt-bg">
-        <div className="section-content">
-          <h2>For Men: Buy with Confidence</h2>
-          <div className="flow-steps">
-            <div className="flow-step">
-              <div className="flow-icon">👀</div>
-              <h3>Step 1: See Her Profile</h3>
-              <p>
-                She sends you her taste profile link. You open it. Suddenly, you understand her style.
-                No more guessing. No more anxiety. You know exactly what she loves.
-              </p>
-            </div>
-            <div className="flow-arrow">→</div>
-            <div className="flow-step">
-              <div className="flow-icon">💰</div>
-              <h3>Step 2: Filter by Budget</h3>
-              <p>
-                Set your budget. See only pieces she loves that fit your price range.
-                No need to overspend. No need to go too low. Just right.
-              </p>
-            </div>
-            <div className="flow-arrow">→</div>
-            <div className="flow-step">
-              <div className="flow-icon">🛍️</div>
-              <h3>Step 3: Buy with Confidence</h3>
-              <p>
-                Click, buy, gift. She opens the box and realizes you actually get her.
-                You both win.
-              </p>
-            </div>
+      <section className="section-block section-cream">
+        <div className="site-container">
+          <div className="section-heading">
+            <p className="eyebrow">For Men</p>
+            <h2>Receive the profile, browse the picks, buy</h2>
+          </div>
+          <div className="steps-grid">
+            {menSteps.map((step, index) => (
+              <Card key={step.title} title={step.title} tone="accent">
+                <p className="step-number">{`0${index + 1}`}</p>
+                <p>{step.copy}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Why It Works */}
-      <section className="section">
-        <div className="section-content">
-          <h2>Why This Works</h2>
-          <div className="benefits-grid">
-            <div className="benefit">
-              <h3>🎯 Precision</h3>
-              <p>No more guessing. Every gift matches her actual taste, not your assumption.</p>
+      <section className="section-block">
+        <div className="site-container">
+          <Card title="The full flow" tone="outline">
+            <div className="flow-line">
+              <span>Swipe</span>
+              <span>Share</span>
+              <span>Buy</span>
             </div>
-            <div className="benefit">
-              <h3>⏱️ Speed</h3>
-              <p>Swiping takes minutes. Finding a gift that lands takes seconds.</p>
-            </div>
-            <div className="benefit">
-              <h3>😌 Confidence</h3>
-              <p>She's already said "yes" through her swipes. You can't get it wrong.</p>
-            </div>
-            <div className="benefit">
-              <h3>💝 Meaning</h3>
-              <p>A gift that matches her taste feels personal. It says "I see you."</p>
-            </div>
-          </div>
+            <p>
+              Jewelry taste is personal. We&apos;ve made it simple. The result is a clear picture of
+              exactly what she loves. No ambiguity. No guesswork.
+            </p>
+          </Card>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section cta-final">
-        <div className="section-content cta-content">
-          <h2>Ready to Start?</h2>
-          <p>Swipe your style. Share with people who matter. Get gifts that land.</p>
-          <a href="https://man-buys-jewellery-eight.vercel.app" className="btn btn-primary btn-large">
-            Start Swiping
-          </a>
+      <section className="section-block section-teal">
+        <div className="site-container cta-panel">
+          <div>
+            <p className="eyebrow eyebrow-light">Next step</p>
+            <h2>Start building her taste profile now</h2>
+            <p>Open the app, swipe through real pieces, and make the next gift easy.</p>
+          </div>
+          <div className="button-row">
+            <Button href={appUrl}>Start Swiping</Button>
+            <Button href="/contact" variant="secondary-light">
+              Contact
+            </Button>
+          </div>
         </div>
       </section>
     </div>

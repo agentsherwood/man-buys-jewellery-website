@@ -1,17 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#1F3557"/>
-      <stop offset="100%" stop-color="#324f7c"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="980" cy="120" r="180" fill="#D4A574" opacity="0.12"/>
-  <circle cx="170" cy="560" r="180" fill="#F5E6E0" opacity="0.2"/>
-  <rect x="80" y="92" width="92" height="92" rx="24" fill="#F9F7F5"/>
-  <path d="M126 112c16 0 28 12 28 26 0 24-28 41-28 41s-28-17-28-41c0-14 12-26 28-26Z" fill="#D4A574"/>
-  <path d="m126 143 18 15-10 25h-16l-10-25Z" fill="#1F3557"/>
-  <text x="80" y="276" fill="#F9F7F5" font-family="Arial, sans-serif" font-size="66" font-weight="700">Finally, Jewelry Gifts</text>
-  <text x="80" y="350" fill="#F9F7F5" font-family="Arial, sans-serif" font-size="66" font-weight="700">She'll Love</text>
-  <text x="80" y="440" fill="#F5E6E0" font-family="Arial, sans-serif" font-size="32">Swipe your style. Share your taste. Buy with confidence.</text>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="24" fill="#F5F1E8"/>
+  <circle cx="1032" cy="128" r="96" fill="#D4A373" fill-opacity="0.25"/>
+  <circle cx="942" cy="512" r="132" fill="#E07A5F" fill-opacity="0.18"/>
+  <rect x="704" y="132" width="304" height="376" rx="24" fill="white" stroke="#E5E7EB"/>
+  <rect x="742" y="180" width="228" height="132" rx="18" fill="#F5F1E8"/>
+  <rect x="742" y="336" width="96" height="18" rx="9" fill="#D4A373"/>
+  <rect x="742" y="372" width="164" height="16" rx="8" fill="#6B7280" fill-opacity="0.25"/>
+  <rect x="742" y="404" width="192" height="16" rx="8" fill="#6B7280" fill-opacity="0.18"/>
+  <rect x="742" y="448" width="128" height="32" rx="16" fill="#E07A5F"/>
+  <path d="M818 227C818 203.252 837.252 184 861 184C884.748 184 904 203.252 904 227C904 250.748 884.748 270 861 270C837.252 270 818 250.748 818 227Z" stroke="#2C5F5F" stroke-width="10"/>
+  <path d="M861 260V304" stroke="#2C5F5F" stroke-width="10" stroke-linecap="round"/>
+  <text x="96" y="176" fill="#D4A373" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">SHE SWIPES. YOU KNOW.</text>
+  <text x="96" y="284" fill="#2C5F5F" font-family="Georgia, serif" font-size="68">Finally, Jewelry</text>
+  <text x="96" y="360" fill="#2C5F5F" font-family="Georgia, serif" font-size="68">Gifts She'll Love</text>
+  <text x="96" y="432" fill="#333333" font-family="Inter, Arial, sans-serif" font-size="28">Swipe through hundreds of real pieces.</text>
+  <text x="96" y="474" fill="#333333" font-family="Inter, Arial, sans-serif" font-size="28">Build her taste profile. Buy the perfect gift.</text>
 </svg>

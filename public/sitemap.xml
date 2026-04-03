@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://man-buys-jewellery-eight.vercel.app</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://man-buys-jewellery.vercel.app/</loc>
   </url>
   <url>
-    <loc>https://man-buys-jewellery-eight.vercel.app/how-it-works</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://man-buys-jewellery.vercel.app/how-it-works</loc>
   </url>
   <url>
-    <loc>https://man-buys-jewellery-eight.vercel.app/about</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://man-buys-jewellery.vercel.app/about</loc>
   </url>
   <url>
-    <loc>https://man-buys-jewellery-eight.vercel.app/contact</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://man-buys-jewellery.vercel.app/contact</loc>
+  </url>
+  <url>
+    <loc>https://man-buys-jewellery.vercel.app/privacy</loc>
+  </url>
+  <url>
+    <loc>https://man-buys-jewellery.vercel.app/terms</loc>
   </url>
 </urlset>

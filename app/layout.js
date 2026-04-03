@@ -1,37 +1,30 @@
-import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['400', '500', '600'],
-  display: 'swap',
-})
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  variable: '--font-heading',
-  weight: ['600', '700'],
-  display: 'swap',
-})
+const baseUrl = 'https://man-buys-jewellery.vercel.app'
 
 export const metadata = {
-  metadataBase: new URL('https://man-buys-jewellery-eight.vercel.app'),
+  metadataBase: new URL(baseUrl),
   title: {
     default: "Man Buys Jewellery | Finally, Jewelry Gifts She'll Love",
     template: '%s | Man Buys Jewellery',
   },
   description:
-    "Taste discovery for jewelry gifting. Swipe through pieces, build a style profile, and share it so the people in your life can buy gifts you'll actually love.",
-  applicationName: 'Man Buys Jewellery',
-  keywords: ['jewelry gifts', 'gift guide', 'taste profile', 'swipe jewelry', 'women jewelry', 'gift ideas'],
+    "Swipe through hundreds of real pieces. Build her taste profile. Buy the perfect gift.",
+  keywords: [
+    'man buys jewellery',
+    'jewelry gifts',
+    'jewellery gifts',
+    'taste discovery',
+    'gift confidence',
+    'swipe jewelry',
+  ],
   openGraph: {
     title: "Man Buys Jewellery | Finally, Jewelry Gifts She'll Love",
     description:
-      "Swipe through jewelry, build your taste profile, and share it for gifts that feel like you.",
-    url: 'https://man-buys-jewellery-eight.vercel.app',
+      "Swipe through hundreds of real pieces. Build her taste profile. Buy the perfect gift.",
+    url: baseUrl,
     siteName: 'Man Buys Jewellery',
     locale: 'en_US',
     type: 'website',
@@ -40,7 +33,7 @@ export const metadata = {
         url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Man Buys Jewellery',
+        alt: 'Man Buys Jewellery open graph card',
       },
     ],
   },
@@ -48,19 +41,51 @@ export const metadata = {
     card: 'summary_large_image',
     title: "Man Buys Jewellery | Finally, Jewelry Gifts She'll Love",
     description:
-      "Swipe through jewelry, build your taste profile, and share it for gifts that feel like you.",
+      "Swipe through hundreds of real pieces. Build her taste profile. Buy the perfect gift.",
     images: ['/og-image.svg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   icons: {
     icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
     apple: '/apple-touch-icon.png',
   },
 }
 
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Man Buys Jewellery',
+    url: baseUrl,
+    logo: `${baseUrl}/favicon.svg`,
+    sameAs: [
+      'https://instagram.com/manbuysjewellery',
+      'https://tiktok.com/@manbuysjewellery',
+      'https://twitter.com/manbuysjewel',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Man Buys Jewellery',
+    url: baseUrl,
+    description:
+      "Swipe through hundreds of real pieces. Build her taste profile. Buy the perfect gift.",
+  },
+]
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <Navigation />
         <main>{children}</main>
         <Footer />
